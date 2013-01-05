@@ -3,30 +3,82 @@ AVATAR the MMORPG
 The plan is to create a Server and Client enabling the production of a computer game based on the universe of Avatar: the last airbender. 
 It will be an open source product complying to all the associated rules and regulations. 
 
-	• A character will be in a location in the world
-	• A world will contain many locations split into regions
-	• A region will have a minimum 4 main camps
-	• Each camp will be for a specific clan
-	• Each character will initially be in one clan only
-	• Clan membership will be determined by standing towards each clan
-	• Clan membership opens up access to missions with that clan
-	• There are several levels of clan standing
-	• If the clan standing is enemy then the NPCs of that clan can attack
-	• If the clan standing is enemy then the Players of that clan can attack you as long as they are not friendly to your clan also.
-	• Clan Standing of Honoured or above allows access to that clans bending abilities
-	• Bending abilities can only be learned in the right order Air, Water, Earth, Fire, Air etc.
-	• Bending abilities have levels from 1 to 4
-	• The higher the level the more powerful the ability
-	• There are side skills for Creating items
-	• There are side skills for gathering resources
-	• There are Combat skills separate from Bending Abilities
-	• All players start at Friendly to their clan and Enemy to all others
-	• Missions can lower standing against other clans
-	• Once a player is at Honoured the standing cannot drop below that.
-	• Players can attack other players only within 5 levels of themselves
-	• Mounts can be obtained from level 20 up.
-	• Earth mounts travel underground 
-	• Air mounts fly
-	• Fire mounts leave trails of fire behind them
-	• Water mounts travel over water faster than ground
-	• There are neutral villages dotted around the world offering missions that affect multiple standings. (air + fire -)
+	ï¿½ A character will be in a location in the world
+	ï¿½ A world will contain many locations split into regions
+	ï¿½ A region will have a minimum 4 main camps
+	ï¿½ Each camp will be for a specific clan
+	ï¿½ Each character will initially be in one clan only
+	ï¿½ Clan membership will be determined by standing towards each clan
+	ï¿½ Clan membership opens up access to missions with that clan
+	ï¿½ There are several levels of clan standing
+	ï¿½ If the clan standing is enemy then the NPCs of that clan can attack
+	ï¿½ If the clan standing is enemy then the Players of that clan can attack you as long as they are not friendly to your clan also.
+	ï¿½ Clan Standing of Honoured or above allows access to that clans bending abilities
+	ï¿½ Bending abilities can only be learned in the right order Air, Water, Earth, Fire, Air etc.
+	ï¿½ Bending abilities have levels from 1 to 4
+	ï¿½ The higher the level the more powerful the ability
+	ï¿½ There are side skills for Creating items
+	ï¿½ There are side skills for gathering resources
+	ï¿½ There are Combat skills separate from Bending Abilities
+	ï¿½ All players start at Friendly to their clan and Enemy to all others
+	ï¿½ Missions can lower standing against other clans
+	ï¿½ Once a player is at Honoured the standing cannot drop below that.
+	ï¿½ Players can attack other players only within 5 levels of themselves
+	ï¿½ Mounts can be obtained from level 20 up.
+	ï¿½ Earth mounts travel underground 
+	ï¿½ Air mounts fly
+	ï¿½ Fire mounts leave trails of fire behind them
+	ï¿½ Water mounts travel over water faster than ground
+	ï¿½ There are neutral villages dotted around the world offering missions that affect multiple standings. (air + fire -)
+
+
+The server will be constructed in a modular way.
+
+Entity Section
+    Database Storage
+    BTree storage for world objects
+    Character Storage
+    NPC definitions
+
+Network utilities / functions
+    Keep Alive
+    Connection and authorisation
+    Data acquisition
+    Data Transmission
+
+Game Logic & Balancing
+    Base Character Stats
+    Air Skills
+    Water Skills
+    Fire Skills
+    Earth Skills
+
+
+Battle Logic
+    Calculate Battle results
+    Perform Attack processing
+
+World Generation
+    Region Mapping
+    Height Mapping
+    Water Flow
+    Spawn Areas
+
+3D rendering engine
+    TBA
+
+Story line
+    Quest Stories
+    Epic Story line
+    PVP story line
+    Neutral Camp Story Lines
+
+
+NPC
+    Standing Aggression/ Friend code
+    Aggro range determination
+    skill AI
+    movement AI
+
+
+
