@@ -1,7 +1,9 @@
 package com.github.avatarmmo.entities;
 
+import com.github.avatarmmo.utilities.Constants;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class TestCharacter {
@@ -43,5 +45,15 @@ public class TestCharacter {
         result = character.getSpeed();
         assertNotNull(result);
 
+    }
+
+    @Test
+    public void characterHasANameAndGender()
+    {
+        Character character = new Character();
+        character.setName("Motoko");
+        character.setGender(com.github.avatarmmo.utilities.Constants.Gender.Female);
+        assertEquals("Motoko",character.getName());
+        assertEquals(Constants.Gender.Female,character.getGender());
     }
 }

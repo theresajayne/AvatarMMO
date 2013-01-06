@@ -1,5 +1,7 @@
 package com.github.avatarmmo.entities;
 
+import com.github.avatarmmo.utilities.Constants;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Theresa
@@ -20,6 +22,8 @@ public class Character {
     private int ZPos;
     private int range;
     private int speed;
+    private String name;
+    private Constants.Gender gender;
 
     public Character() {
     }
@@ -118,5 +122,22 @@ public class Character {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGender(Constants.Gender gender) {
+        this.gender = gender;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Constants.Gender getGender()
+    {
+        return gender;
     }
 }
